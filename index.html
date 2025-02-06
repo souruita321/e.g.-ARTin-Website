@@ -26,3 +26,49 @@
             <button onclick="filterArt('3D Art')">3D Art</button>
         </div>
     </section>
+
+    <section id="gallery">
+        <h2>Art Gallery</h2>
+        <div id="art-container" class="gallery-grid"></div>
+    </section>
+
+    <!-- Upload Modal -->
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeUploadModal()">&times;</span>
+            <h2>Upload Your Artwork</h2>
+            <form id="upload-form">
+                <input type="file" id="art-image" accept="image/*" required>
+                <input type="text" id="art-title" placeholder="Enter Art Title" required>
+                <input type="text" id="artist-name" placeholder="Your Name" required>
+                <select id="artist-class">
+                    <option value="Class X">Class X</option>
+                    <option value="Class XI">Class XI</option>
+                    <option value="Class XII">Class XII</option>
+                </select>
+                <select id="art-category">
+                    <option value="Picture">Picture</option>
+                    <option value="Comic">Comic</option>
+                    <option value="3D Art">3D Art</option>
+                </select>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAboutModal()">&times;</span>
+            <h2>About ARTin</h2>
+            <p>ARTin is an art exhibition platform created by Hamid and Dustin, two aspiring students dedicated to making the school environment more vibrant. This platform provides a space where students can freely express their creativity and emotions through artwork. By showcasing your artistic passion on ARTin, we hope to inspire and support your dreams beyond the boundaries of the school curriculum.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ARTin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
